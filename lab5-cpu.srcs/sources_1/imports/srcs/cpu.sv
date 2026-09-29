@@ -60,6 +60,8 @@ logic ben;
 
 assign mem_addr = mar;
 assign mem_wdata = mdr;
+assign mio_en = mem_mem_ena;
+//logic mio_en;
 
 // State machine, you need to fill in the code here as well
 // .* auto-infers module input/output connections which have the same name
@@ -95,7 +97,7 @@ end
 mux2_1 sr2_mux(.S(sr2mux), .B_In({{11{ir[4]}}, ir[4:0]}), .A_In(reg_sr2_out), .Q_Out(alu_B)); 
 mux2_1 addr1_mux(.S(addr1mux), .A_In(pc), .B_In(reg_sr1_out), .Q_Out(addr1_mux_out));
 //mux2_1 marmux(.S(marmux), .A_In(), .B_In(), .Q_Out());
-mux2_1 mdr_mux(.S(mio_en), .A_In(databus), .B_In(mdr_in), .Q_Out(mdr_next));
+mux2_1 mdr_mux(.S(mio_en), .A_In(databus), .B_In(mem_rdata), .Q_Out(mdr_next));
 mux2_1 #(.N(3)) dr_mux(.S(drmux), .A_In(3'b111), .B_In(ir[11:9]), .Q_Out(reg_dr_in));
 mux2_1 #(.N(3)) sr1_mux (.S(sr1mux), .B_In(ir[11:9]), .A_In(ir[8:6]), .Q_Out(sr1)); 
 
