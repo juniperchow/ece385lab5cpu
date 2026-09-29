@@ -129,7 +129,7 @@ load_reg #(.DATA_WIDTH(16)) pc_reg (
     .reset(reset),
 
     .load(ld_pc),
-    .data_i(databus),
+    .data_i(pc_next),
 
     .data_q(pc)
 );

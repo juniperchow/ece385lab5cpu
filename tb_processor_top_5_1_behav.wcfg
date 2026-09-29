@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_processor_top_5_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SLC3_TYPES" />
+            <top_module name="\$unit_alu_sv_2416933532 " />
+            <top_module name="glbl" />
+            <top_module name="tb_processor_top_5_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
+      <Cursor1Time time="260.678 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/run_i">
+      <obj_property name="ElementShortName">run_i</obj_property>
+      <obj_property name="ObjectShortName">run_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/continue_i">
+      <obj_property name="ElementShortName">continue_i</obj_property>
+      <obj_property name="ObjectShortName">continue_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/sw_i">
+      <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/led_o">
+      <obj_property name="ElementShortName">led_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/hex_seg_left">
+      <obj_property name="ElementShortName">hex_seg_left[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_seg_left[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/hex_seg_right">
+      <obj_property name="ElementShortName">hex_seg_right[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_seg_right[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/hex_grid_left">
+      <obj_property name="ElementShortName">hex_grid_left[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_grid_left[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/hex_grid_right">
+      <obj_property name="ElementShortName">hex_grid_right[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_grid_right[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/error_count">
+      <obj_property name="ElementShortName">error_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/check_count">
+      <obj_property name="ElementShortName">check_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">check_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/fetch_count">
+      <obj_property name="ElementShortName">fetch_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/reset_cycles">
+      <obj_property name="ElementShortName">reset_cycles[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_cycles[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/monitor_enable">
+      <obj_property name="ElementShortName">monitor_enable</obj_property>
+      <obj_property name="ObjectShortName">monitor_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/reset_count_enable">
+      <obj_property name="ElementShortName">reset_count_enable</obj_property>
+      <obj_property name="ObjectShortName">reset_count_enable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/TIMEOUT_CYCLES">
+      <obj_property name="ElementShortName">TIMEOUT_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TIMEOUT_CYCLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/BUTTON_CYCLES">
+      <obj_property name="ElementShortName">BUTTON_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BUTTON_CYCLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/databus">
+      <obj_property name="ElementShortName">databus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">databus[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/pc">
+      <obj_property name="ElementShortName">pc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/mar">
+      <obj_property name="ElementShortName">mar[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mar[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/pc_branch">
+      <obj_property name="ElementShortName">pc_branch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_branch[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/pc_next">
+      <obj_property name="ElementShortName">pc_next[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_next[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ir">
+      <obj_property name="ElementShortName">ir[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ir[15:0]</obj_property>
+   </wvobject>
+</wave_config>

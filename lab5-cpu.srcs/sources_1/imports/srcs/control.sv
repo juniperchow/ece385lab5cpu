@@ -279,8 +279,8 @@ module control (
                     4'b1101 : 
                         state_nxt = pause_ir1; // pause
                     default: 
-                        state_nxt = pause_ir1; //wk1 skip decode
-                        //state_nxt = s_18; //decode 
+                        //state_nxt = pause_ir1; //wk1 skip decode
+                        state_nxt = s_18; //decode 
                 endcase
             s_00: 
                 begin
