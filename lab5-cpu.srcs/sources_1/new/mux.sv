@@ -96,10 +96,10 @@ module mux4_1_onehot //onehot encoding input used for databus
 	always_comb
 		begin
 				unique case(S)
-						4'b0001 :	Q_Out = A_In;
-						4'b0010 :	Q_Out = B_In;
-						4'b0100 :	Q_Out = C_In;
-						4'b1000 :	Q_Out = D_In;
+						4'b1000 :	Q_Out = A_In;
+						4'b0100 :	Q_Out = B_In;
+						4'b0010 :	Q_Out = C_In;
+						4'b0001 :	Q_Out = D_In;
 						default: Q_Out = 16'hxxxx; // must add default since we do not handle all cases explicitly
 				endcase
 		end

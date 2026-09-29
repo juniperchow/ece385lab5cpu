@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="juniper" Host="juniper-ThinkPad-T14-Gen-5" Pid="214244" HostCore="16" HostMemory="22725832">
+    </Process>
+</ProcessHandle>

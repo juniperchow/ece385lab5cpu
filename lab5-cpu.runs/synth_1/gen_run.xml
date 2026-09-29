@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1790659979">
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1790697747">
   <File Type="VDS-TIMINGSUMMARY" Name="processor_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="processor_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="processor_top_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="processor_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="processor_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="processor_top.vds"/>
+  <File Type="REPORTS-TCL" Name="processor_top_reports.tcl"/>
   <File Type="VDS-TIMING-PB" Name="processor_top_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="processor_top.tcl"/>
-  <File Type="REPORTS-TCL" Name="processor_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="processor_top.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="processor_top_drc_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/alu.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/srcs/control.sv">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../lab5_provided_fa24/srcs/control.sv"/>
@@ -83,6 +90,20 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/mux.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/regfile.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/srcs/slc3.sv">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../lab5_provided_fa24/srcs/slc3.sv"/>
@@ -105,22 +126,6 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../lab5_provided_fa24/srcs/processor_top.sv"/>
         <Attr Name="ImportTime" Val="1708131678"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/alu.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mux.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -153,9 +158,8 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>
