@@ -36,13 +36,22 @@ module control (
 	output logic		ld_mar,
 	output logic		ld_mdr,
 	output logic		ld_ir,
+	output logic        ld_ben,
+	                    ld_cc,
+	                    ld_reg,
 	output logic		ld_pc,
-	output logic        ld_led,
+	output logic        ld_led, // pause instruction
 						
 	output logic		gate_pc,
 	output logic		gate_mdr,
+	                    gate_alu,
+	                    gate_marmux,
 						
 	output logic [1:0]	pcmux,
+	output logic        drmux, sr1mux, sr2mux, addr1mux, 
+	output logic[1:0]   addr2mux,
+	
+	output logic [1:0]  alu_K, 
 	
 	//You should add additional control signals according to the SLC-3 datapath design
 
@@ -54,10 +63,23 @@ module control (
 		halted, 
 		pause_ir1,
 		pause_ir2, 
+		s_00,
+		s_01,
+		s_04,
+		s_05,
+		s_06,
+		s_07,
+		s_09,
+		s_12,
+		s_16, s_16_1, s_16_2, s_16_3,
 		s_18, 
-		s_33_1,
-		s_33_2,
-		s_33_3,
+		s_21,
+		s_22, 
+		s_23,
+		s_25, s_25_1, s_25_2, s_25_3,
+		s_27,
+		s_32,
+		s_33_1, s_33_2, s_33_3,
 		s_35
 	} state, state_nxt;   // Internal state logic
 
@@ -79,14 +101,28 @@ module control (
 		ld_mar = 1'b0;
 		ld_mdr = 1'b0;
 		ld_ir = 1'b0;
+		ld_ben = 1'b0;
+		ld_cc = 1'b0;
+		ld_reg = 1'b0;
 		ld_pc = 1'b0;
 		ld_led = 1'b0;
 		
-		gate_pc = 1'b0;
+		gate_pc = 1'b0; //one hot logic
 		gate_mdr = 1'b0;
-		 
-		pcmux = 2'b00;
+		gate_alu = 1'b0;
+		gate_marmux = 1'b0;
 		
+		alu_K = 2'b00; 
+		
+		pcmux = 2'b00;
+		drmux = 1'b0;
+		sr1mux = 1'b0;
+		sr2mux = 1'b0;
+		addr1mux = 1'b0;
+		addr2mux = 2'b00;
+		
+		mem_mem_ena = 1'b0;
+		mem_wr_ena = 1'b0;
 	
 		// Assign relevant control signals based on current state
 		case (state)
@@ -111,7 +147,84 @@ module control (
 			pause_ir1: ld_led = 1'b1; 
 			pause_ir2: ld_led = 1'b1; 
 			// you need to finish the rest of state output logic..... 
-
+            s_32: ld_ben = 1'b1;
+            s_01: begin //ADD R(DR) <= R(SR1) + R(SR2)
+                sr2mux = ir[5]; //sel imm5,sr2_out
+                alu_K = 2'b00;
+                gate_alu = 1'b1;
+                ld_reg = 1'b1;
+                ld_cc = 1'b1;
+                sr1mux = 1'b0; //ir[8:6]
+                drmux = 1'b1;
+            end
+            s_00: ld_ben = 1'b1;
+            s_04: begin
+                gate_pc = 1'b1;
+                ld_reg = 1'b1;
+                drmux = 1'b0; // 111 R7
+            end
+            s_05: begin // AND instruction R(dr) <- R(sr1) & R(sr2)
+                sr2mux = ir[5];
+                alu_K = 2'b01; //a&b 
+                gate_alu = 1'b1;
+                ld_reg = 1'b1;
+                ld_cc = 1'b1;
+                sr1mux = 1'b0; //sel ir[8:6]
+                drmux = 1'b1; // sel ir[11:9]
+            end
+            //base reg B ir[8:6]
+            s_06, s_07: begin
+                ld_mar = 1'b1;
+                sr1mux = 1'b0; //ir[8:6]
+                addr1mux = 1'b1; //sr1_out
+                addr2mux = 2'b01; //offset6 sign ext ir[5:0]
+                gate_marmux = 1'b1; //specification unclear check later
+            end
+            s_09: begin //not instruction R(dr) <- ~R(sr1)
+                sr2mux = ir[5];
+                alu_K = 2'b10; //~a
+                gate_alu = 1'b1; 
+                ld_reg = 1'b1;
+                ld_cc = 1'b1; 
+                sr1mux = 1'b0; //ir[8:6]
+                drmux = 1'b1; //ir[11:9]
+            end
+            s_12: begin //jmp instruction pc <- opcode baseR
+                sr1mux = 1'b0; //ir[8:6]
+                ld_pc = 1'b1;
+                pcmux = 2'b01; //pc_alu_out
+                addr2mux = 2'b01; // sel ir[5:0]
+                addr1mux = 1'b1; //sel reg_sr1
+            end
+            s_16, s_16_1, s_16_2: mem_wr_ena = 1'b1; //write instruction M[mar] <- mdr
+            s_21: begin //pc<-pc+off11
+                addr2mux = 2'b11; //ir[10:0] off11
+                pcmux = 2'b01;
+                ld_pc = 1'b1; 
+            end
+            s_22: begin //pc<-pc+off9
+                addr2mux = 2'b10; //ir[8:0] off9
+                pcmux = 2'b01; //sel pc_branch
+                ld_pc = 1'b1; 
+            end
+            s_23: begin //mdr<-sr
+                alu_K = 2'b11; // a
+                sr1mux = 1'b1; //ir[11:9]
+                gate_alu = 1'b1;
+                ld_mdr = 1'b1; 
+            end
+            //wait for memory to ready before loading MDR similar to given example in S_33
+            s_25, s_25_1: mem_mem_ena = 1'b1; //mdr<-M[mar]
+            s_25_2: begin
+                mem_mem_ena = 1'b1;
+                ld_mdr = 1'b1; 
+            end
+            s_27: begin // dr<-mdr
+                ld_cc = 1'b1;
+                drmux = 1'b1; //ir[11:9]
+                gate_mdr = 1'b1;
+                ld_reg = 1'b1;
+            end
 			default : ;
 		endcase
 	end 
@@ -122,7 +235,7 @@ module control (
 		// default next state is staying at current state
 		state_nxt = state;
 
-		unique case (state)
+		unique case (state) //assign next state 
 			halted : 
 				if (run_i) 
 					state_nxt = s_18;
@@ -145,8 +258,50 @@ module control (
 				if (~continue_i)
 					state_nxt = s_18;
 			// you need to finish the rest of state transition logic.....
-			
-			default :;
+			s_32:
+                case(ir[15:12]) //opcode
+                    4'b0001 : 
+                        state_nxt = s_01; // add 
+                    4'b0101 : 
+                        state_nxt = s_05; // and
+                    4'b1001 : 
+                        state_nxt = s_09; // not
+                    4'b0000 : 
+                        state_nxt = s_00; // br
+                    4'b1100 : 
+                        state_nxt = s_12; // jmp
+                    4'b0100 : 
+                        state_nxt = s_04; // jsr 
+                    4'b0110 : 
+                        state_nxt = s_06; // ldr
+                    4'b0111 : 
+                        state_nxt = s_07; // str
+                    4'b1101 : 
+                        state_nxt = pause_ir1; // pause
+                    default: 
+                        state_nxt = pause_ir1; //wk1 skip decode
+                        //state_nxt = s_18; //decode 
+                endcase
+            s_00: 
+                begin
+                    if(ben) state_nxt = s_22; 
+                    else state_nxt = s_18;
+                end
+            s_01 : state_nxt = s_18; //PauseIR1; 
+            s_05, s_09, s_12, s_16_3, s_21, s_22, s_27 : state_nxt = s_18; 
+            
+			s_04: state_nxt = s_21; 
+            s_06: state_nxt = s_25; 
+            s_07: state_nxt = s_23; 
+            s_16: state_nxt = s_16_1;
+            s_16_1: state_nxt = s_16_2; 
+            s_16_2: state_nxt = s_16_3; 
+            s_23: state_nxt = s_16; 
+            s_25: state_nxt = s_25_1; 
+            s_25_1: state_nxt = s_25_2; 
+            s_25_2: state_nxt = s_25_3; 
+            s_25_3: state_nxt = s_27; 
+            default : state_nxt = s_18;
 		endcase
 	end
 	
