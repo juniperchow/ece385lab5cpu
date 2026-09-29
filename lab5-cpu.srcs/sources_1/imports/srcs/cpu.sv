@@ -45,9 +45,7 @@ logic ld_ben, ld_cc, ld_reg;
 logic ld_pc; 
 logic ld_led;
 
-logic gate_pc;
-logic gate_mdr;
-logic gate_alu, gate_marmux; 
+logic gate_pc, gate_mdr, gate_alu, gate_marmux; 
 
 logic [1:0] pcmux, addr2mux;
 logic drmux, sr1mux, sr2mux, addr1mux; 
@@ -107,7 +105,7 @@ mux4_1 ADDR2_mux(.S(addr2mux), .A_In(16'h0000), .B_In({{10{ir[4]}}, ir[5:0]}), .
                     .Q_Out(addr2_mux_out));
 
 //one hot 4:1 mux (databus)
-mux4_1_onehot databus_mux(.S({GateALU, GateMARMUX, GateMDR, GatePC}), .A_In(alu_out), .B_In(PC_branch), .C_In(mdr), .D_In(pc), .Q_Out(databus));
+mux4_1_onehot databus_mux(.S({gate_alu, gate_marmux, gate_mdr, gate_pc}), .A_In(alu_out), .B_In(PC_branch), .C_In(mdr), .D_In(pc), .Q_Out(databus));
 
 alu cpu_alu(.A_In(reg_sr1_out), .B_In(alu_B), .K(alu_K), .out(alu_out));
 
@@ -139,7 +137,7 @@ load_reg #(.DATA_WIDTH(16)) mdr_reg (
     .reset(reset),
 
     .load(ld_mdr),
-    .data_i(databus),
+    .data_i(mdr_next),
 
     .data_q(mdr)
 );

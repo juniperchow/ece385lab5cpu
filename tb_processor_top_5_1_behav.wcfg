@@ -13,15 +13,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
-      <Cursor1Time time="260.678 ns"></Cursor1Time>
+      <ZoomStartTime time="87.120 ns"></ZoomStartTime>
+      <ZoomEndTime time="235.223 ns"></ZoomEndTime>
+      <Cursor1Time time="139.216 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <NameColumnWidth column_width="185"></NameColumnWidth>
       <ValueColumnWidth column_width="76"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="24" />
+   <WVObjectSize size="35" />
    <wvobject type="logic" fp_name="/tb_processor_top_5_1/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -117,5 +117,49 @@
    <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ir">
       <obj_property name="ElementShortName">ir[15:0]</obj_property>
       <obj_property name="ObjectShortName">ir[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/cpu_control/state_nxt">
+      <obj_property name="ElementShortName">state_nxt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state_nxt[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/cpu_control/state">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/mdr">
+      <obj_property name="ElementShortName">mdr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mdr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_mar">
+      <obj_property name="ElementShortName">ld_mar</obj_property>
+      <obj_property name="ObjectShortName">ld_mar</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_mdr">
+      <obj_property name="ElementShortName">ld_mdr</obj_property>
+      <obj_property name="ObjectShortName">ld_mdr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_ir">
+      <obj_property name="ElementShortName">ld_ir</obj_property>
+      <obj_property name="ObjectShortName">ld_ir</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_ben">
+      <obj_property name="ElementShortName">ld_ben</obj_property>
+      <obj_property name="ObjectShortName">ld_ben</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_cc">
+      <obj_property name="ElementShortName">ld_cc</obj_property>
+      <obj_property name="ObjectShortName">ld_cc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_reg">
+      <obj_property name="ElementShortName">ld_reg</obj_property>
+      <obj_property name="ObjectShortName">ld_reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_pc">
+      <obj_property name="ElementShortName">ld_pc</obj_property>
+      <obj_property name="ObjectShortName">ld_pc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/ld_led">
+      <obj_property name="ElementShortName">ld_led</obj_property>
+      <obj_property name="ObjectShortName">ld_led</obj_property>
    </wvobject>
 </wave_config>
