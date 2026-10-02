@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -87,13 +86,14 @@ set_property ip_output_repo /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
+read_verilog /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/types.sv
+set_property file_type "Verilog Header" [get_files /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/types.sv]
 read_verilog -library xil_defaultlib -sv {
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/new/alu.sv
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/control.sv
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/cpu.sv
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/cpu_to_io.sv
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/hex_driver.sv
-  /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/types.sv
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/instantiate_ram.sv
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/load_reg.sv
   /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sources_1/imports/srcs/memory.sv
@@ -119,6 +119,8 @@ read_xdc /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/co
 set_property used_in_implementation false [get_files /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/constrs_1/imports/pin_assignment/top.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/utils_1/imports/synth_1/processor_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
