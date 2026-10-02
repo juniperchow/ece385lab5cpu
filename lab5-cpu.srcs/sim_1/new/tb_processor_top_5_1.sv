@@ -50,7 +50,7 @@ module tb_processor_top_5_1;
         // The dots name instances inside the DUT (lecture slide 132).
         // Use behavioral simulation with the project's test_memory module.
         #120;
-        dut.mem_subsystem.test_mem_subsystem.mem_array[0] = 16'h1221;
+        //dut.mem_subsystem.test_mem_subsystem.mem_array[0] = 16'h1221;
 
         // 300 ns: press Run to start the first fetch.
         #50;
