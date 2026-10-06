@@ -58,7 +58,7 @@ module control (
 	output logic		mem_mem_ena, // Mem Operation Enable
 	output logic		mem_wr_ena  // Mem Write Enable
 );
-
+    logic mem_r_ena; 
 	enum logic [4:0] {
 		halted, 
 		pause_ir1,pause_ir2, 
@@ -120,9 +120,9 @@ module control (
 		addr1mux = 1'b0;
 		addr2mux = 2'b00;
 		
-		mem_mem_ena = 1'b0;
+		mem_mem_ena = mem_wr_ena | mem_r_ena;
 		mem_wr_ena = 1'b0;
-	
+	    mem_r_ena = 1'b0; 
 		// Assign relevant control signals based on current state
 		case (state)
 			halted: ; 
@@ -135,11 +135,11 @@ module control (
 				end
 			s_33, s_33_1, s_33_2:
 			    begin
-			        mem_mem_ena = 1'b1;
+			        mem_r_ena = 1'b1;
 			    end
 			s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
 				begin
-					mem_mem_ena = 1'b1;
+					mem_r_ena = 1'b1;
 					ld_mdr = 1'b1;
 				end
 			s_35 : 
@@ -214,12 +214,12 @@ module control (
                 alu_K = 2'b11; // a
                 sr1mux = 1'b1; //ir[11:9]
                 gate_alu = 1'b1;
-                ld_mdr = 1'b1; 
+                ld_mdr = 1'b1;
             end
             //wait for memory to ready before loading MDR similar to given example in S_33
-            s_25, s_25_1: mem_mem_ena = 1'b1; //mdr<-M[mar]
+            s_25, s_25_1: mem_r_ena = 1'b1; //mdr<-M[mar]
             s_25_2: begin
-                mem_mem_ena = 1'b1;
+                mem_r_ena = 1'b1;
                 ld_mdr = 1'b1; 
             end
             s_27: begin // dr<-mdr

@@ -111,7 +111,7 @@ mux4_1_onehot databus_mux(.S({gate_alu, gate_marmux, gate_mdr, gate_pc}), .A_In(
 alu cpu_alu(.A_In(reg_sr1_out), .B_In(alu_B), .K(alu_K), .out(alu_out));
 
 assign led_o = ir;
-assign hex_display_debug = ir;
+assign hex_display_debug = mdr;
 
 load_reg #(.DATA_WIDTH(3)) cc_reg (
     .clk    (clk),
