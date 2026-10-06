@@ -1,130 +1,0 @@
-Data_For_RDAFlowver5.0
-	top levelàã
-dbg_hub
-LinkDesign_BlackboxesñZ
-synthFileNamesn
-5i/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/scripts/rt/data/BUFT.vÃ
-36≈/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/ltlib_v1_0_0_ver.vhÃ
-41≈/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_icn.vhÅ
-6|/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/unimacro_VCOMP.vhdœ
-37»/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/ltlib_v1_0_0_lib_fn.vh—
-42 /home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_ports.vhÄ
-7{/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/ADDMACC_MACRO.vhdƒ
-38Ω/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/xsdbm_v3_0_vl_rfs.v”
-43Ã/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bsid_ports.vh
-8z/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/ADDSUB_MACRO.vhdÀ
-39ƒ/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_in.vhÀ
-44ƒ/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs.vh‘
-50Õ/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vhÅ
-9|/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd‘
-45Õ/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh”
-51Ã/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_sl_prt_map.vh–
-46…/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_core.vhœ
-52»/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_id_map.vhœ
-47»/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_ext.vh”
-53Ã/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_id_vec_map.vh◊
-48–/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bsid_vec_ports.vhº
-54µ/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/synth/dbg_hub.vœ
-49»/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_vec.vh¡
-60∫/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/numeric_std.vhdr
-55l/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhdº
-61µ/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/textio.vhdœ
-56»/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhdæ
-62∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/timing_p.vhd”
-57Ã/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/fifo_generator_v13_1_vhsyn_rfs.vhdæ
-63∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/timing_b.vhdæ
-58∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/std_1164.vhdæ
-64∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/prmtvs_p.vhdæ
-59∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/standard.vhdæ
-65∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/prmtvs_b.vhdæ
-66∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/syn_arit.vhdæ
-67∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/syn_unsi.vhdæ
-68∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/syn_sign.vhdæ
-69∑/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/1993/src/syn_misc.vhdÖ
-10/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhdÇ
-11|/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_TDP_MACRO.vhdá
-12Ä/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/COUNTER_LOAD_MACRO.vhdÑ
-13~/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/COUNTER_TC_MACRO.vhdÑ
-14~/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/EQ_COMPARE_MACRO.vhdÅ
-20{/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/ADDSUB_MACRO.vâ
-15Ç/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhdÉ
-21}/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SDP_MACRO.vÉ
-16}/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhdá
-22Ä/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v~
-17x/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/MACC_MACRO.vhd~
-18x/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/MULT_MACRO.vhdÉ
-23}/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.vÇ
-19|/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/ADDMACC_MACRO.và
-24Å/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/COUNTER_LOAD_MACRO.vÖ
-25/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/COUNTER_TC_MACRO.v
-30y/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/MULT_MACRO.v
-NumFileNames70Ö
-26/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/EQ_COMPARE_MACRO.vÖ
-31/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/retarget/MULT18X18.vhdx
-1s/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_VCOMP.vhdä
-27É/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.vá
-32Ä/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/retarget/MULT18X18S.vhdw
-2r/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_VPKG.vhdÑ
-28~/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/FIFO_SYNC_MACRO.v{
-33u/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.svu
-3p/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v
-29y/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/MACC_MACRO.vÅ
-34{/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.svx
-4s/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/scripts/rt/data/internal_cells.vƒ
-35Ω/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/ltlib_v1_0_vl_rfs.vÃ
-40≈/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.runs/impl_1/.Xil/Vivado-948226-juniper-ThinkPad-T14-Gen-5/dc_drv.0/dc/prj_ip.gen/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_i2x.vhY
-
-synthStatsK
-caseNotFullNoDefault
-
-L11993
-Mnullname
-F38
-O
-next_stateƒ+
-ElaboratedNamesForRQS™+
-DSP_RAMg
-47640577[ {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BURST_WD_LEN_CONTROLLER/burst_wd0_i} Q
-3080193F {inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/counter0_i} L
-11280385@ {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_STAT/iSTAT_CNT0_i} i
-6819841^ {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_bit_count0_i} ñ
-33366019â {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/plusOp_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/plusOp_i} v
-9691137k {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_ICON_INTERFACE_SEL_MASK/SL_DEN_MASK_O_i} i
-47644673] {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BURST_WD_LEN_CONTROLLER/wdc_eq_zero_i} l
-47611905` {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BURST_WD_LEN_CONTROLLER/wdc_eq_zero_i__2} i
-7303169^ {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/shift_bit_count0_i} K
-11571201? {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_SYNC/iGOT_SYNC_i} d
-6840321Y {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/cnt_is_zero_i} d
-50221057X {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/U_TIMER/timeout_i} c
-50216961W {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/U_TIMER/count0_i} û
-21991427ë {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg} K
-3760129@ {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/CORE_ID_SEL_i} ⁄
-49123329Õ {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/active_sl_den_mask_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/auto_sl_drdy_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/auto_sl_drdy_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_abort_rd_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_abort_rd_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_rd_req_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_rd_req_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/dec_wdc_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/dec_wdc_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_idle_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_idle_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_normal_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_normal_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_read_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_read_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_write_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_write_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/inc_addr_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/inc_addr_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_err_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_rd_flush_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_rd_flush_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_wr_pop_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_wr_pop_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_berr_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_rdmux_sel_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_rst_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/timer_rst_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/timer_rst_i__0} R
-3321857G {inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/shiftreg0_i} ^
-47276033R {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/addr0_i} ñ
-34299907â {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/plusOp_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/plusOp_i} K
-3878913@ {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/COMMAND_SEL_i} r
-10227713f {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_STATIC_STATUS/stat_addr_bit_cnt0_i} 
-blackBoxInfoò
-synth_design
-blackBoxPerc-nan
-	directive 
-isIncremental0
-Runtime0
-Threads used4l
-argsd-verilog_define default::[not_specified] -top  dbg_hub -part  xc7s50csga324-1 -incremental_mode off 
-resynthPerc0.00
-Cputime0ú
-synth_design_metrics
-	smallSrls-1
-srlsWithResetLogic-1
-shallowRAMWithAttribute-1
-hierMFO0
-bigRAMs-1
-NetsWithMixedFanouts-1
-DSPsWithKeep0$
-mismatchedAddSubOperatorWidths-1
-lowMaxFanout-1
-NumUnregisteredPorts0
-caseNotFullNoDefault1
-RQS_Results
