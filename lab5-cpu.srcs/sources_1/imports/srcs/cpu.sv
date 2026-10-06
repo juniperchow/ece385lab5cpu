@@ -100,14 +100,13 @@ mux2_1 addr1_mux(.S(addr1mux), .A_In(pc), .B_In(reg_sr1_out), .Q_Out(addr1_mux_o
 mux2_1 mdr_mux(.S(mio_en), .A_In(databus), .B_In(mem_rdata), .Q_Out(mdr_next));
 mux2_1 #(.N(3)) dr_mux(.S(drmux), .A_In(3'b111), .B_In(ir[11:9]), .Q_Out(reg_dr_in));
 mux2_1 #(.N(3)) sr1_mux (.S(sr1mux), .B_In(ir[11:9]), .A_In(ir[8:6]), .Q_Out(sr1)); 
-
 //4:1 mux
 mux4_1 PC_mux(.S(pcmux), .A_In(pc_plusplus), .B_In(pc_branch), .C_In(databus), .D_In(16'h0000), .Q_Out(pc_next));
 mux4_1 ADDR2_mux(.S(addr2mux), .A_In(16'h0000), .B_In({{10{ir[4]}}, ir[5:0]}), .C_In({{7{ir[4]}}, ir[8:0]}), .D_In({{5{ir[4]}}, ir[10:0]}), 
                     .Q_Out(addr2_mux_out));
 
 //one hot 4:1 mux (databus)
-mux4_1_onehot databus_mux(.S({gate_alu, gate_marmux, gate_mdr, gate_pc}), .A_In(alu_out), .B_In(PC_branch), .C_In(mdr), .D_In(pc), .Q_Out(databus));
+mux4_1_onehot databus_mux(.S({gate_alu, gate_marmux, gate_mdr, gate_pc}), .A_In(alu_out), .B_In(pc_branch), .C_In(mdr), .D_In(pc), .Q_Out(databus));
 
 alu cpu_alu(.A_In(reg_sr1_out), .B_In(alu_B), .K(alu_K), .out(alu_out));
 
@@ -155,7 +154,7 @@ load_reg #(.DATA_WIDTH(16)) mar_reg (
 );
 
 regfile cpu_regfile(.clk(clk), .reset(reset), 
-                    .LD_REG(ld_reg), .DR(reg_dr_in), .SR2(ir[2:0]), .SR1(ir[2:0]), 
+                    .LD_REG(ld_reg), .DR(reg_dr_in), .SR2(ir[2:0]), .SR1(sr1), 
                     .data_i(databus),
                     .SR1_OUT(reg_sr1_out), .SR2_OUT(reg_sr2_out));
 

@@ -61,8 +61,7 @@ module control (
 
 	enum logic [4:0] {
 		halted, 
-		pause_ir1,
-		pause_ir2, 
+		pause_ir1,pause_ir2, 
 		s_00,
 		s_01,
 		s_04,
@@ -79,7 +78,7 @@ module control (
 		s_25, s_25_1, s_25_2, s_25_3,
 		s_27,
 		s_32,
-		s_33_1, s_33_2, s_33_3,
+		s_33, s_33_1, s_33_2, s_33_3,
 		s_35
 	} state, state_nxt;   // Internal state logic
 
@@ -134,7 +133,11 @@ module control (
 					pcmux = 2'b00;
 					ld_pc = 1'b1;
 				end
-			s_33_1, s_33_2, s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
+			s_33, s_33_1, s_33_2:
+			    begin
+			        mem_mem_ena = 1'b1;
+			    end
+			s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
 				begin
 					mem_mem_ena = 1'b1;
 					ld_mdr = 1'b1;
@@ -178,7 +181,7 @@ module control (
                 sr1mux = 1'b0; //ir[8:6]
                 addr1mux = 1'b1; //sr1_out
                 addr2mux = 2'b01; //offset6 sign ext ir[5:0]
-                gate_marmux = 1'b1; //specification unclear check later
+                gate_marmux = 1'b1; //marmux not used in SLC3 datapath the signal does not come from marmux mux 
             end
             s_09: begin //not instruction R(dr) <- ~R(sr1)
                 sr2mux = ir[5];
@@ -240,7 +243,9 @@ module control (
 				if (run_i) 
 					state_nxt = s_18;
 			s_18 : 
-				state_nxt = s_33_1; //notice that we usually have 'r' here, but you will need to add extra states instead 
+				state_nxt = s_33; //notice that we usually have 'r' here, but you will need to add extra states instead 
+			s_33:
+			    state_nxt = s_33_1;
 			s_33_1 :                 //e.g. s_33_2, etc. how many? as a hint, note that the bram is synchronous, in addition, 
 				state_nxt = s_33_2;   //it has an additional output register. 
 			s_33_2 :
@@ -248,9 +253,7 @@ module control (
 			s_33_3 : 
 				state_nxt = s_35;
 			s_35 : 
-				state_nxt = pause_ir1;
-			// pause_ir1 and pause_ir2 are only for week 1 such that TAs can see 
-			// the values in ir.
+				state_nxt = s_32;
 			pause_ir1 : 
 				if (continue_i) 
 					state_nxt = pause_ir2;
@@ -277,7 +280,9 @@ module control (
                     4'b0111 : 
                         state_nxt = s_07; // str
                     4'b1101 : 
-                        state_nxt = pause_ir1; // pause
+                        state_nxt = s_18; // decode
+                    4'b1101 : 
+                        state_nxt = pause_ir1; //pause
                     default: 
                         //state_nxt = pause_ir1; //wk1 skip decode
                         state_nxt = s_18; //decode 
@@ -287,8 +292,8 @@ module control (
                     if(ben) state_nxt = s_22; 
                     else state_nxt = s_18;
                 end
-            s_01 : state_nxt = s_18; //PauseIR1; 
-            s_05, s_09, s_12, s_16_3, s_21, s_22, s_27 : state_nxt = s_18; 
+            //s_01 : state_nxt = s_18; //PauseIR1; 
+            s_01, s_05, s_09, s_12, s_16_3, s_21, s_22, s_27 : state_nxt = s_18; 
             
 			s_04: state_nxt = s_21; 
             s_06: state_nxt = s_25; 

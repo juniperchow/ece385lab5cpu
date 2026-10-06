@@ -51,15 +51,17 @@ module tb_processor_top_5_1;
         // Use behavioral simulation with the project's test_memory module.
         #120;
         //dut.mem_subsystem.test_mem_subsystem.mem_array[0] = 16'h1221;
-
+        
         // 300 ns: press Run to start the first fetch.
-        #50;
+        #50
+        sw_i = 4'h0005;
         run_i = 1'b1;
 
         // 420 ns: release Run and end the simulation.
         // Continue stays low, so the CPU pauses after the first fetch.
         #120;
         run_i = 1'b0;
+        #1024;
         $finish;
     end
 
