@@ -61,7 +61,9 @@ module tb_processor_top_5_1;
         // Continue stays low, so the CPU pauses after the first fetch.
         #120;
         run_i = 1'b0;
-        #2048;
+        #1024;
+        sw_i = 4'h2222;
+        #1024
         $finish;
     end
 

@@ -33,3 +33,4 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/juniper/Nextcloud/uofi_
 INFO: [VRFC 10-311] analyzing module test_memory
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sim_1/new/tb_processor_top_5_1.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_processor_top_5_1
+WARNING: [VRFC 10-8497] literal value 'h2222 truncated to fit in 4 bits [/home/juniper/Nextcloud/uofi_fa26/ece385/lab5/lab5-cpu/lab5-cpu.srcs/sim_1/new/tb_processor_top_5_1.sv:65]

@@ -199,7 +199,7 @@ module control (
                 addr2mux = 2'b01; // sel ir[5:0]
                 addr1mux = 1'b1; //sel reg_sr1
             end
-            s_16, s_16_1, s_16_2: mem_wr_ena = 1'b1; //write instruction M[mar] <- mdr
+            s_16, s_16_1, s_16_2, s_16_3: mem_wr_ena = 1'b1; //write instruction M[mar] <- mdr
             s_21: begin //pc<-pc+off11
                 addr2mux = 2'b11; //ir[10:0] off11
                 pcmux = 2'b01;

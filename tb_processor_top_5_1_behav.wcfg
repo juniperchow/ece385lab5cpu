@@ -13,15 +13,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="841.925 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,008.626 ns"></ZoomEndTime>
-      <Cursor1Time time="979.625 ns"></Cursor1Time>
+      <ZoomStartTime time="735.086 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,552.833 ns"></ZoomEndTime>
+      <Cursor1Time time="1,030.981 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="125"></NameColumnWidth>
+      <NameColumnWidth column_width="120"></NameColumnWidth>
       <ValueColumnWidth column_width="76"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="34" />
+   <WVObjectSize size="35" />
    <wvobject type="logic" fp_name="/tb_processor_top_5_1/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -158,5 +158,9 @@
    <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/addr1mux">
       <obj_property name="ElementShortName">addr1mux</obj_property>
       <obj_property name="ObjectShortName">addr1mux</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processor_top_5_1/dut/slc3/cpu/mem_wr_ena">
+      <obj_property name="ElementShortName">mem_wr_ena</obj_property>
+      <obj_property name="ObjectShortName">mem_wr_ena</obj_property>
    </wvobject>
 </wave_config>
