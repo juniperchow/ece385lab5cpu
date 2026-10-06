@@ -280,9 +280,7 @@ module control (
                     4'b0111 : 
                         state_nxt = s_07; // str
                     4'b1101 : 
-                        state_nxt = s_18; // decode
-                    4'b1101 : 
-                        state_nxt = pause_ir1; //pause
+                        state_nxt = pause_ir1; // decode
                     default: 
                         //state_nxt = pause_ir1; //wk1 skip decode
                         state_nxt = s_18; //decode 
