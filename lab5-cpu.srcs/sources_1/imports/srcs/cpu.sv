@@ -113,6 +113,26 @@ alu cpu_alu(.A_In(reg_sr1_out), .B_In(alu_B), .K(alu_K), .out(alu_out));
 assign led_o = ir;
 assign hex_display_debug = ir;
 
+load_reg #(.DATA_WIDTH(3)) cc_reg (
+    .clk    (clk),
+    .reset  (reset),
+
+    .load   (ld_cc),
+    .data_i (cc_next),
+
+    .data_q (cc)
+);
+
+load_reg #(.DATA_WIDTH(1)) ben_reg (
+    .clk    (clk),
+    .reset  (reset),
+
+    .load   (ld_ben),
+    .data_i (ben_next),
+
+    .data_q (ben)
+);
+
 load_reg #(.DATA_WIDTH(16)) ir_reg (
     .clk    (clk),
     .reset  (reset),
